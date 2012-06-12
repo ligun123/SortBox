@@ -118,7 +118,7 @@ void insertSort(int arr[], int size)
 }
 
 /**************************希尔排序*****************************/
-void shell_order(int *a,int length)
+void shellSort(int a[],int length)
 {
     int increment,i,j,tem;
     for(increment = length/2; increment > 0; increment /=2)
@@ -153,6 +153,8 @@ int main(int argc, const char * argv[])
 //    bubbleSort(array, 10);        //冒泡排序
     
 //    insertSort(array, 10);        //插入排序
+    
+//    shellSort(array, 10);         //希尔排序
     
     for (int i = 0; i < 10; i ++) {
         printf("%d",array[i]);
