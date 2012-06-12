@@ -201,6 +201,7 @@
 				B23BD4E0157F73A2003B90F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
