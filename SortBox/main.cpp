@@ -117,6 +117,26 @@ void insertSort(int arr[], int size)
     }
 }
 
+/**************************希尔排序*****************************/
+void shell_order(int *a,int length)
+{
+    int increment,i,j,tem;
+    for(increment = length/2; increment > 0; increment /=2)
+    {
+        for(i = increment; i < length; i++)
+        {
+            tem = a[i];
+            for(j = i; j >= increment; j -= increment)
+            {
+                if(tem<a[j-increment])
+                    a[j] = a[j-increment];
+                else break;
+            }
+            a[j] = tem;
+        }
+    }
+}
+
 int main(int argc, const char * argv[])
 {
     // insert code here...
